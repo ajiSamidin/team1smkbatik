@@ -11,18 +11,21 @@ include 'koneksi.php';
 		$dapat = mysqli_query($masuk, $ambil);
 
 		$list = mysqli_fetch_array($dapat);
-
+    $pangkat = $list['level'];
+    
 		if (isset($dapat)) {
 
 			$_SESSION['id'] = $list['name'];
 			$_SESSION['id_user'] = $nama;
 
-			header("location: home.php");
+        if (isset($_SESSION['id_user']) && $pangkat == "admin") {
+          header("location: home.php");
+        }elseif (isset($_SESSION['id_user']) && $pangkat == "calon") {
+         header("location: home_calon.php");
+        }
 		}
 	}
-	if (isset($_SESSION['id_user'])) {
-			header("location: home.php");
-		}
+	
 
 ?>
 <!DOCTYPE html>
@@ -67,7 +70,7 @@ include 'koneksi.php';
           <input type="username" class="form-control" placeholder="Username" name="nama">
           <div class="input-group-append">
             <div class="input-group-text" style="background-color: grey; color : white">
-              <span class="fas fa-user" ></span>
+              <span class="fas fa-user"></span>
             </div>
           </div>
         </div>
@@ -75,7 +78,7 @@ include 'koneksi.php';
           <input type="password" class="form-control" placeholder="Password" name="sandi">
           <div class="input-group-append">
             <div class="input-group-text" style="background-color: grey; color : white">
-              <span class="fas fa-lock" ></span>
+              <span class="fas fa-lock"></span>
             </div>
           </div>
         </div>
@@ -106,4 +109,3 @@ include 'koneksi.php';
 <script src="dist/js/adminlte.min.js"></script>
 </body>
 </html>
-Footer

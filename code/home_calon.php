@@ -17,7 +17,7 @@ session_start();
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <style type="text/css">
     .btn {
-      width: 90%;
+      width: 100%;
       margin: 10px 0 0 15px;
     }.nama {
       position: relative;
@@ -71,7 +71,7 @@ session_start();
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="Update_data_calon.php" class="btn btn-primary"  style="color : black; width: 35%">
+            <a href="Update_data_calon.php" class="btn btn-primary"  style="color : black; width: 40%">
                   Update Data
                 </a>
           </li>
