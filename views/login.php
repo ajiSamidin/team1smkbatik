@@ -36,7 +36,7 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg"><i>Silahkan Log In</i></p>
 
-      <form action="<?=base_url('User/cek_login')?>" method="post">
+      <form action="User/cek_login" method="post">
         <div class="input-group mb-3">
           <input type="username" class="form-control" placeholder="Username" name="nama">
           <div class="input-group-append">

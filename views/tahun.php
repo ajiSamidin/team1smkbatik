@@ -1,9 +1,9 @@
-
+<div class="content-wrapper">
     <section class="content">
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
-            <div class="card">
+            <div class="card mt-3">
               <div class="card-header bg-primary">
                 <h5>Pilih Tahun pemilihan untuk melihat data.</h5>
               </div>
@@ -46,3 +46,5 @@
         </div>
       </div>
     </section>
+  </div>
+  <!-- CONTENT mulia dari content wraper -->

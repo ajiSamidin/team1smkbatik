@@ -23,10 +23,13 @@
               </a>
               <ul class="nav nav-treeview" style="margin-left: 10px">
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>2016</p>
-                  </a>
+                    <span class="nav-link" style="color: white; float: left; ">2016</span>
+                    <div class="custom-control custom-switch">
+                      <a href="#">
+                        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                        <label class="custom-control-label" for="customSwitch1"></label>
+                      </a>
+                    </div>
                 </li>
                 <li class="nav-item">
                   <a href="index2.html" class="nav-link">
@@ -42,7 +45,7 @@
                 </li>
               </ul>
                 <li class="nav-item">
-                  <a href="Admin/tahun" class="nav-link">
+                  <a href="lihat_tahun" class="nav-link">
                    <i class="fas fa-atlas" style="margin-left: 7px;"></i>
                     <p style="margin-left: 7px">lihat Tahun</p>
                   </a>
@@ -56,26 +59,26 @@
             </li>
             <li class="nav-header">Anggota</li>
                 <li class="nav-item">
-                  <a href="info_user.php" class="nav-link">
+                  <a href="Admin/info_admin" class="nav-link">
                     <i class="fa fa-user-circle" aria-hidden="true" style="margin-left: 6px;"></i>
                     <p style="margin-left: 6px;">Info Data Pribadi</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="?data=lompat" class="nav-link">
+                  <a href="anggota" class="nav-link">
                     <i class="fas fa-list" style="margin-left: 6px;"></i>
                     <p style="margin-left: 6px;">List data Anggota</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="tambahUser.php" class="nav-link">
+                  <a href="tambah_user" class="nav-link">
                     <i class="fa fa-cart-plus" aria-hidden="true" style="margin-left: 6px;"></i>
                     <p style="margin-left: 6px;">Tambah User Baru</p>
                   </a>
                 </li>
             <li class="nav-header">Keluar Aplikasi</li>
            <li class="nav-item">
-                  <a href="../Logout/keluar" class="nav-link">
+                  <a href="logout.php" class="nav-link">
                     <i class="fa fa-power-off" aria-hidden="true" style="margin-left: 6px;"></i>
                     <p style="margin-left: 6px;">Log Out</p>
                   </a>
@@ -87,3 +90,4 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+  

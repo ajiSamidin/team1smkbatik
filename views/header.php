@@ -42,9 +42,10 @@
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
         <span> 
-         <!--  <?php               
-            //echo "Selamat Datang ". $_SESSION['nama'];
-          ?> -->
+          <!-- <?php      
+          //$this->load->library('session');         
+          //echo "Selamat Datang ". $this->session->has_userdata($nama);
+          ?>  -->
         </span>
       </li>
     </ul>
