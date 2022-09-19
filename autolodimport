@@ -1,0 +1,1 @@
+$autoload['libraries'] = array('database', 'session', 'form_validation', 'cart','excel');
